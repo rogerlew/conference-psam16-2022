@@ -90,6 +90,18 @@ Need something easier to decompose to build and validate cognitive model.
 
 ---
 
+### Rancor Microworld Parameter Discretization Schemes
+
+| Parameter Type		| Discretization   |
+----------------------------------------
+| Alarm			        | N/A, False, True |
+| Reactivity	      | N/A, Offline (0%), Online (0% - 100%), Over-Power (100%-102.5%), Over Trip Threshold (>102.5%) |
+| Pump State		    | N/A, Off, On |
+| SG Level		      | N/A, Low (<40%), Normal (40%-60%), High (60%) |
+| Valve			        | N/A, Closed (0%), Open (>0%) |
+| Latched			      | N/A, Not Latched, Latched |
+
+
 ### Example: Controlling Steam Generator Levels
 
 ```
