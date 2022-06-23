@@ -32,7 +32,9 @@ class: center, middle
 - Integrative modeling with plant simulators
   - important to understand the impact of decisions to plant performance
   - estimate PSFs based on dynamic plant conditions
-- Couple to HUNTER
+- Couple to HUNTER to create virtual operator
+  - real-time operator
+  - monte-carlo simulations
 
 ---
 
@@ -57,7 +59,7 @@ Can model several known memory limitations:
 - primacy and recency effects
 - serial recall performance
 
-Decades of studies, good understanding of default parametrs to yield reasonable results
+Decades of studies, good understanding of default parameters that yield reasonable results
 
 ---
 
@@ -69,6 +71,19 @@ Decades of studies, good understanding of default parametrs to yield reasonable 
 - Learns "chunks" which are vectorized representations of the plant state
 - Can also explicitly be given "utility" of chunks
 - Once trained can be given a partial representation and retrieves closest match with utility weighting
+
+---
+
+## Rancor Microworld 
+
+Full-scope simulators contain tens-thousands of parameters.
+Need something easier to decompose to build and validate cognitive model.
+
+- Rancor Microworld is a Simplified Nuclear Power Plant Simulator
+- Has the major systems and components of a PWR
+- Reduced complexity to allow naive operators to quickly learn and operate it
+- Lots of experience and available data
+  - (Plants have data but it is inaccessible)
 
 ---
 
