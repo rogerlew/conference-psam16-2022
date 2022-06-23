@@ -86,21 +86,49 @@ Need something easier to decompose to build and validate cognitive model.
   - (Plants have data but it is inaccessible)
 
 ---
+
 <img width="800" src="highperf-hmi-overview.20210430.PNG"/>
 
 ---
 
 ### Rancor Microworld Parameter Discretization Schemes
 
-| Parameter Type		| Discretization   |
-----------------------------------------
-| Alarm			        | N/A, False, True |
-| Reactivity	      | N/A, Offline (0%), Online (0% - 100%), Over-Power (100%-102.5%), Over Trip Threshold (>102.5%) |
-| Pump State		    | N/A, Off, On |
-| SG Level		      | N/A, Low (<40%), Normal (40%-60%), High (60%) |
-| Valve			        | N/A, Closed (0%), Open (>0%) |
-| Latched			      | N/A, Not Latched, Latched |
+<table>
+    <thead>
+        <tr>
+            <td>Parameter Type</td>
+            <td>Discretization</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alarm</td>
+            <td>N/A, False, True</td>
+        </tr>
+        <tr>
+            <td>Reactivity</td>
+            <td>N/A, Offline (0%), Online (0% - 100%), Over-Power (100%-102.5%), Over Trip Threshold (&gt;102.5%)</td>
+        </tr>
+        <tr>
+            <td>Pump State</td>
+            <td>N/A, Off, On</td>
+        </tr>
+        <tr>
+            <td>SG Level</td>
+            <td>N/A, Low (&lt;40%), Normal (40%-60%), High (60%)</td>
+        </tr>
+        <tr>
+            <td>Valve</td>
+            <td>N/A, Closed (0%), Open (&gt;0%)</td>
+        </tr>
+        <tr>
+            <td>Latched</td>
+            <td>N/A, Not Latched, Latched</td>
+        </tr>
+    </tbody>
+</table>
 
+---
 
 ### Example: Controlling Steam Generator Levels
 
