@@ -93,7 +93,7 @@ background-image: url(highperf-hmi-overview.20210430.PNG)
 
 ### Example: Controlling Steam Generator Levels
 
-<pre>
+```
 plant       alarm       alarm       SG A        SG B        Δ SG A      Δ SG B      response            comments
 mode        high sg     low sg      level       level       level       level
 ------------------------------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ Online/     True        *           None        None        None        None    
 Startup
 Online/     *           True        None        None        None        None        investigate low     low SA 
 Startup
-</pre>
+```
 
 ---
 
