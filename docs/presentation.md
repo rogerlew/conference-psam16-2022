@@ -86,7 +86,7 @@ Need something easier to decompose to build and validate cognitive model.
   - (Plants have data but it is inaccessible)
 
 ---
-<img width="560" src="highperf-hmi-overview.20210430.PNG"/>
+<img width="800" src="highperf-hmi-overview.20210430.PNG"/>
 
 ---
 
