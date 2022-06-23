@@ -45,8 +45,9 @@
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
+      const timestamp = Date.now();
       var slideshow = remark.create({ratio: '16:9',
-                                     sourceUrl: 'presentation.md'});
+                                     sourceUrl: 'presentation.md?t=' + timestamp});
     </script>
   </body>
 </html>
