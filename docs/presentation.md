@@ -187,31 +187,23 @@ Startup
   - manipulating the accuracy of the learning chunks
   - adding extraneous variables
 
-## Rancor Microworld
+---
+
+## Next step: Operator Model
+
+- Hierarchical declarative memory models
+  - plant overview
+  - annuciator response -> alarm immediate actions
+  - alarm immediate actions -> procedure
+- Flow based on ethnographic studies working with operators
+  - Walking the boards to assess plant state
+  - Looking for contradictory indications
+  - Receive Action -> Verify Action -> Carryout Action -> Peercheck -> Validate System Response
+  - Spidey sense awareness of plant state
+- Scaffold approach
 
 ---
 
-## Cognitive Model
-
----
-
-### Lessons Learned
-
----
+## Conclusions and Discussion
 
 
-## Model Architecture
-
----
-
-## HUNTER Integration
-
----
-
-## Future Implications
-
----
-
-### Understand human resilience
-
-- spidey sense awareness of plant state
