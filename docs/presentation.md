@@ -87,7 +87,7 @@ Need something easier to decompose to build and validate cognitive model.
 
 ---
 
-background-image: url(highperf-hmi-overview.20210430.PNG)
+.right[![RANCOR](highperf-hmi-overview.20210430.PNG)]
 
 ---
 
