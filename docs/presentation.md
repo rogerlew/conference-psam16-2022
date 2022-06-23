@@ -2,11 +2,11 @@ class: center, middle
 
 # Development of a Dynamic Cognitive Modeling Architecture of Human Reliability Simulation using the Rancor Microworld Simulator
 
-### Roger Lew<sup>a</sup>, Torrey Mortenson<sup>b</sup>, Ronald L Boring<sup>c</sup>, and Thomas A Ulrich<sup>d</sup>
-#### <sup>b</sup>,University of Idaho, Moscow, ID, USA, rogerlew@uidaho.edu
-#### <sup>b</sup>,Idaho National Laborarory, Idaho Falls, ID, USA, torrey.mortenson@inl.gov
-#### <sup>c</sup>,Idaho National Laborarory, Idaho Falls, ID, USA, ronald.boring@inl.gov
-#### <sup>d</sup>,Idaho National Laborarory, Idaho Falls, ID, USA, thomas.ulrich@inl.gov
+##### Roger Lew<sup>a</sup>, Torrey Mortenson<sup>b</sup>, Ronald L Boring<sup>c</sup>, and Thomas A Ulrich<sup>d</sup>
+###### <sup>b</sup>,University of Idaho, Moscow, ID, USA, rogerlew@uidaho.edu
+###### <sup>b</sup>,Idaho National Laborarory, Idaho Falls, ID, USA, torrey.mortenson@inl.gov
+###### <sup>c</sup>,Idaho National Laborarory, Idaho Falls, ID, USA, ronald.boring@inl.gov
+###### <sup>d</sup>,Idaho National Laborarory, Idaho Falls, ID, USA, thomas.ulrich@inl.gov
 
 ---
 
