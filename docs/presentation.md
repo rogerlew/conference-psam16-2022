@@ -87,6 +87,10 @@ Need something easier to decompose to build and validate cognitive model.
 
 ---
 
+background-image: url(highperf-hmi-overview.20210430.PNG)
+
+---
+
 ### Example: Controlling Steam Generator Levels
 
 <pre>
