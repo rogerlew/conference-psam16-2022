@@ -200,10 +200,13 @@ Startup
   - Looking for contradictory indications
   - Receive Action -> Verify Action -> Carryout Action -> Peercheck -> Validate System Response
   - Spidey sense awareness of plant state
-- Scaffold approach
+- Scaffold approach: get it working, refine latter
 
 ---
 
 ## Conclusions and Discussion
 
-
+- Primary goal is to model human performance
+- Safety I vs. Safety II
+  - Understand human contribution to resilient human/machine system
+- Automated systems based on virtual operator models 
