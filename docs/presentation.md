@@ -87,7 +87,7 @@ Need something easier to decompose to build and validate cognitive model.
 
 ---
 
-<img width="800" src="highperf-hmi-overview.20210430.PNG"/>
+<img width="960" src="highperf-hmi-overview.20210430.PNG"/>
 
 ---
 
