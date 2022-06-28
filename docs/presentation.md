@@ -163,9 +163,9 @@ Online/     *           *           *           low         *           ↓     
 Startup
 Online/     *           *           *           low         *           ~           ↑CV B               way after alarm 
 Startup
-Online/     True        *           None        None        None        None        investigate high    low SA 
+Online/     True        *           *           *           *           *           investigate high    low SA 
 Startup
-Online/     *           True        None        None        None        None        investigate low     low SA 
+Online/     *           True        *           *           *           *           investigate low     low SA 
 Startup
 ```
 
