@@ -125,7 +125,7 @@ Need something easier to decompose to build and validate cognitive model.
             <td>Latched</td>
             <td>N/A, Not Latched, Latched</td>
         </tr>
-mg    </tbody>
+      </tbody>
 </table>
 
 ---
