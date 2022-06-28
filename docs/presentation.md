@@ -87,7 +87,7 @@ Need something easier to decompose to build and validate cognitive model.
 
 ---
 
-<img width="1080" src="highperf-hmi-overview.20210430.PNG"/>
+<img width="1000" src="highperf-hmi-overview.20210430.PNG"/>
 
 ---
 
@@ -125,7 +125,7 @@ Need something easier to decompose to build and validate cognitive model.
             <td>Latched</td>
             <td>N/A, Not Latched, Latched</td>
         </tr>
-    </tbody>
+mg    </tbody>
 </table>
 
 ---
