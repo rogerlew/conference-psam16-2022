@@ -139,7 +139,7 @@ mode        high sg     low sg      level       level       level       level
 Shutdown    *           *           *           *           *           *           None
 *           *           *           *           *           *           *           determine plant     low SA
                                                                                     mode
-Online/     *           *           normal      *           ↑           *           ↓CV A               ahead of alarm
+Online/     *           *           normal      normal      ~           ~           None                ahead of alarm
 Startup
 Online/     *           *           high        *           ↑           *           ↓CV A               after alarm 
 Startup
