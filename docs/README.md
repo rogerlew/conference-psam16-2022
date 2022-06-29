@@ -8,7 +8,7 @@ Aloha, I'm Roger Lew from the University of Idaho. I wasn't able to make it to H
 Here I will be discussing the development of a cognitive modeling architecture for dynamic HRA using the Rancor Microworld Simulator. I'd like to acknowledge my co-authors Torrey Mortenson, Ron Boring, and Tom Ulrich.
 
 ### slide 2
-As we all know nuclear plants are complex engineering systems. They are among the most complex systems created by humans. Not only are they technically complex, but they are socio-technically complex due to the regulatory requirements, and organizational structures required to support plants.
+As we all know nuclear plants are complex engineering systems. <strike>They are among the most complex systems created by humans. Not only are they technically complex, but they are socio-technically complex due to the regulatory requirements, and organizational structures required to support plants.</strike>
 
 To manage safety their is a need to understand and estimate the contributors and propensity for human error in the control room and the implications they have on the plant.
 
@@ -28,7 +28,7 @@ Why ACT-R?
 
 Honestly, I'm new to ACT-R. 
 
-ACT-R or the Adaptive Control of Thought-Rational was an attractive option because it is mature having originated in 1973. It is a fairly extensive cognitive modeling framework. The model attempts to incorporate our best understanding of cognitive neuroscience and decades of psychology experiments. There are three main types of modules in ACT-R: perceptual motor, declarative, and procedural.
+ACT-R or the Adaptive Control of Thought-Rational was an attractive option because it is mature having originated in 1973. It is a fairly extensive cognitive modeling framework. The model attempts to incorporate our best understanding of cognitive neuroscience and decades of psychology experiments.<strike> There are three main types of modules in ACT-R: perceptual motor, declarative, and procedural.</strike>
 
 ### slide 5
 
