@@ -32,9 +32,6 @@ class: center, middle
 - Integrative modeling with plant simulators
   - important to understand the impact of decisions to plant performance
   - estimate PSFs based on dynamic plant conditions
-- Couple to HUNTER to create virtual operator
-  - real-time operator
-  - monte-carlo simulations
 
 ---
 
@@ -201,7 +198,6 @@ Startup
   - Walking the boards to assess plant state
   - Looking for contradictory indications
   - Receive Action -> Verify Action -> Carryout Action -> Peercheck -> Validate System Response
-  - Spidey sense awareness of plant state
 - Scaffold approach: get it working, refine latter
 
 ---
@@ -209,6 +205,10 @@ Startup
 ## Conclusions and Discussion
 
 - Primary goal is to model human performance
+- Couple to HUNTER to create virtual operator
+  - real-time operator
+  - monte-carlo simulations
 - Safety I vs. Safety II
   - Understand human contribution to resilient human/machine system
+  - Spidey sense awareness of plant state
 - Automated systems based on virtual operator models 
