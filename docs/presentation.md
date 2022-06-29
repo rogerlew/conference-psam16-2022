@@ -137,7 +137,7 @@ plant       alarm       alarm       SG A        SG B        Δ SG A      Δ SG B
 mode        high sg     low sg      level       level       level       level
 ------------------------------------------------------------------------------------------------------------------------
 Shutdown    *           *           *           *           *           *           None
-*           *           *           *           *           *           *           determine plant     low SA
+<unknown>   *           *           *           *           *           *           determine plant     low SA
                                                                                     mode
 Online/     *           *           normal      normal      ~           ~           None                ahead of alarm
 Startup
@@ -167,6 +167,8 @@ Online/     True        *           *           *           *           *       
 Startup
 Online/     *           True        *           *           *           *           investigate low     low SA 
 Startup
+------------------------------------------------------------------------------------------------------------------------
+* any state or <unknown>
 ```
 
 ---
