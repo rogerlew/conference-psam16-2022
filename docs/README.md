@@ -2,53 +2,54 @@
 
 ## Transcript
 
-### Slide 1
-Aloha, I'm Roger Lew from the University of Idaho. I contracted an asymtomatic case of COVID just days before my flight and wasn't able to make it. I hope you'll are enjoying Hawaii and I'd like to thank Ron for letting me present remotely.
+### slide 1
+Aloha, I'm Roger Lew from the University of Idaho. I wasn't able to make it to Hawaii, but I hope you'll are enjoying Hawaii and I'd like to thank Ron for letting me present remotely.
 
 Here I will be discussing the development of a cognitive modeling architecture for dynamic HRA using the Rancor Microworld Simulator. I'd like to acknowledge my co-authors Torrey Mortenson, Ron Boring, and Tom Ulrich.
 
-### Slide 2
+### slide 2
 As we all know nuclear plants are complex engineering systems. They are among the most complex systems created by humans. Not only are they technically complex, but they are socio-technically complex due to the regulatory requirements, and organizational structures required to support plants.
 
-To manage safety their is a need to understand and estimate the propensity for human error in the control room and the implications of human error.
+To manage safety their is a need to understand and estimate the contributors and propensity for human error in the control room and the implications they have on the plant.
 
 Traditional HRA methods are static and subjective, relying on the estimates of subject matter experts. The subjective nature can result in unreliable estimates and potential biases.
 
-### Slide 3
+### slide 3
 
-Ideally would like a method that is less subjective. Here use a symbolic model of human cognition rather than an experet-based empirical model. It is symbolic in that the model incorporates abstract psychological constructs that interact with one another to produce outcomes. As opposed to a model that fit to data. Specifically we are using an implementation of ACT-R's declarative memory model.
+Ideally, we would like a method that is less subjective. Here we use a symbolic model of human cognition rather than an expert-based empirical model. It is symbolic in that the model incorporates abstract psychological constructs that interact with one another to produce outcomes. As opposed to a model that fit to data. Specifically, we are using an implementation of ACT-R's declarative memory model.
 
-Secondly, we would like to know how operator decisions impact performance. Humans commit many errors some are more consquential than others. We want to know how decisions impact plant performance. To accomplish this we are utilizing integrative modeling of human machine systems. Another possibility with an integrated modeling framework is the ability to estimate performance shaping factors based on dynamic plant conditions.
+Secondly, we would like to know how operator decisions impact performance. Humans commit many errors, some are more consquential than others. We want to know how decisions impact plant performance. To accomplish this we are utilizing an integrative modeling approach. Where the cognitive model is integrated with a simplified plant model, the Rancor Microworld, which I will tell you about in a bit. 
 
-Other work is developing an operator model for procedure following called HUNTER, Human Unimodel for Nuclear Technology to Enhace Reliability. The cognitive modeling is complementary to HUNTER and could be integrated with HUNTER. HUNTER can execute procedures, but doesn't know how to select the appropriate procedures to follow. 
- 
-### Slide 4
+Another possibility with this integrated modeling framework is the ability to estimate performance shaping factors based on dynamic plant conditions and take them into account for modeling human performance.
+
+### slide 4
+
+Why ACT-R?
+
+Honestly, I'm new to ACT-R. 
 
 ACT-R or the Adaptive Control of Thought-Rational was an attractive option because it is mature having originated in 1973. It is a fairly extensive cognitive modeling framework. The model attempts to incorporate our best understanding of cognitive neuroscience and decades of psychology experiments. There are three main types of modules in ACT-R: perceptual motor, declarative, and procedural.
 
-### Slide 5
+### slide 5
 
-Here we are mostly interested in the declarative memory module. Declarative memory is the knowledge of facts like knowing that Paris is the capital of France. For the operator model we want a model that can remember the correct action for a given plant state. The ACT-R declarative memory model can model several memory limitiations including the fan effect, primacy and recency effects, and serial recall performance. Enough studies have been performed such that we have a good understanding of default parameters that yield reasonable results.
+Here we are mostly interested in the declarative memory module. Declarative memory is the knowledge of facts like knowing that Paris is the capital of France. For the operator model we want a model that can remember the correct action for a given plant state. The ACT-R declarative memory model can accurately model several memory limitiations including the fan effect, primacy and recency effects, and serial recall performance. Enough studies have been performed such that we have a good understanding of default parameters that yield reasonable results.
 
 ### slide 6
 
 So how does cognitive model work?
 
-The model learns a vectorized (discrete) problem space. Those vectors are called chunks. In this context the chunks are vectors representing the state of the plant. Such as knowing the reactor temperature is normal, both reactor coolant pumps are operational, the turbine/generator load is above 0 MW, no alarms are annuciated. In addition to the chunks the model learns how the chunks indicate the state of the plant: e.g. online, startup, abnormal, or the appropriate procedure to enter.
+The model learns a vectorized (discrete) problem space. These vectors are called chunks. In this context the chunks are vectors representing the state of the plant. Such as knowing the reactor temperature is normal, both reactor coolant pumps are operational, the turbine/generator load is above 0 MW, no alarms are annuciated. In addition to the chunks the model learns how the chunks indicate the state of the plant: e.g. online, startup, abnormal, or the appropriate procedure to enter.
 
-Once trained the models can be given a partial chunk and retrieve the closest match with the highest utility.
+Once trained the models can retrieve the chunk (and the remembered decision) or be given a partial chunk and retrieve the closest match with the highest utility.
 
 ### slide 7
-
-Nuclear power plants have full-scope simulators with literally tens-of thousands of parameters in the model. Here we need something simplier and more decomposible to start with. We are utilizing the Rancor Microworld, a Simplified Nuclear Power Plant Simulator. It has the major systems and components of a PWR, but with reduced complexity. The reduced complexity allows naive operators to quickly learn and operate it. We also have lots of experience with Rancor and a fair amount of data available to use for modeling.
-
 ### slide 8
 
-Here is a depiction of a plant overview display for Rancor. We can see the systems and components in the Rancor microworld.
+Nuclear power plants have full-scope simulators with literally tens-of thousands of parameters in the model and complex interactions between systems. Here we need something simplier and more decomposible to start with. We are utilizing the Rancor Microworld, a Simplified Nuclear Power Plant Simulator. It has the major systems and components of a PWR, but with reduced complexity. The reduced complexity allows naive operators to quickly learn and operate it. We also have lots of experience with Rancor and a fair amount of data available to use for modeling.
 
 ### slide 9
 
-One challenge is that the cogntive model needs discrete states, but many of the parameters in Rancor are continuous. So we need a way of discretizing the parameters for the cognitive models. This table highlights some of the discretization schemes used to train the cognitive models. In the long run it would be great if the discretation  schemes could be decided by the model. At this point they are explicitly defined based on our operational experience with Rancor. The model states are also nullable or allow for unknown states.
+One challenge is that the cogntive model needs discrete states, but many of the parameters in Rancor are continuous. So we need a way of discretizing the parameters for the cognitive models. This table highlights some of the discretization schemes used to train the cognitive models. It would be better if the discretation schemes could be decided by the model. At this point they are explicitly defined based on our operational experience with Rancor. The perceived model states are also nullable or allow for unknown states.
 
 ### slide 10
 
@@ -92,6 +93,10 @@ The overall "control loop" of an operator would resemble what we've observed ope
 
 Hopefully this provided some insight into how we think cognitive models can be applied to dynamic HRA. The overall gol is to model human performance. 
 
-Beyond that are numerous possibilities. Hollnagel talks about Safety I vs. Safety II approaches. Safety I is traditional approach were we try to understand what leads to human error and work to prevent it. Safety II is the other side of the coin and examines how humans contribute to human machine peformance. We heavily rely on humans in the control room to ensure operational resilience. 
+Beyond that are numerous possibilities. 
 
-Cognitive models could provide a means of capturing operator actions and decisions that lead to resilience. For example, cognitive models can take context into consideration. There could even be potential to build automated supervisory systems based on virtual operator models.
+Other work is developing an operator model for procedure following called HUNTER, Human Unimodel for Nuclear Technology to Enhance Reliability. This cognitive modeling is complementary to HUNTER and could be integrated with HUNTER. HUNTER can execute procedures, but doesn't know how to select the appropriate procedures to follow. 
+ 
+ Hollnagel talks about Safety I vs. Safety II approaches. Safety I is traditional approach were we try to understand what leads to human error and work to prevent it. Safety II is the other side of the coin and examines how humans contribute to human machine peformance. We heavily rely on humans in the control room to ensure operational resilience. Good operators have a sort of "spidey sense" for how things are going. Operators develop intuitions for what can go wrong that aid in diagnostic troubleshooting.
+
+Perhaps cognitive models could provide a means of capturing operator actions and decisions that lead to resilience. For example, cognitive models can take context into consideration. There could even be potential to build automated supervisory systems based on virtual operator models.
