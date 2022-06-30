@@ -1,6 +1,6 @@
 class: center, middle
 
-## Development of a Dynamic Cognitive Modeling Architecture of Human Reliability Simulation using the Rancor Microworld Simulator
+## Development of a Cognitive Modeling Architecture for Dynamic HRA using the Rancor Microworld Simulator
 
 ##### Roger Lew<sup>a</sup>, Torrey Mortenson<sup>b</sup>, Ronald L Boring<sup>c</sup>, and Thomas A Ulrich<sup>d</sup>
 
