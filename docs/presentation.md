@@ -29,6 +29,7 @@ class: center, middle
 
 - Utilize symbolic model of human cognition rather than expert-based empirical models
   - ACT-R's declarative memory model (PyACTUp, PyIBL)
+  - Try to emulate how operators make decisions
 - Integrative modeling with plant simulators
   - important to understand the impact of decisions to plant performance
   - estimate PSFs based on dynamic plant conditions
