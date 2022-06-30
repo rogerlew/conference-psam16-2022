@@ -19,7 +19,7 @@ class: center, middle
 - Traditional HRA methods are static (estimated per task) and subjective
 - Utilize symbolic model of human cognition rather than expert-based empirical models
   - ACT-R's declarative memory model (PyACTUp, PyIBL)
-  - Try to emulate how operators make decisions
+  - Try to emulate not only the decisions made by operators but how they make decisions
 - Integrative modeling with plant simulators
   - important to understand the impact of decisions to plant performance
   - estimate PSFs based on dynamic plant conditions
